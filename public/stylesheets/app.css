@@ -237,3 +237,7 @@ ul.mw-search-results li {
 input {
   text-align:center;
 }
+
+.small {
+  font-size: .5em;
+}
