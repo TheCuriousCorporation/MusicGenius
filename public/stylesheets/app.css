@@ -60,11 +60,14 @@ body {
 .social-likes__icon_twitter {
   top: 0.05em;
 }
+
 header {
   text-align: center;
   font-size: 2em;
   margin-top: 1em;
 }
+
+
 body.home {
   display: -webkit-box;
   display: -webkit-flex;
@@ -236,8 +239,4 @@ ul.mw-search-results li {
 
 input {
   text-align:center;
-}
-
-.small {
-  font-size: .5em;
 }
