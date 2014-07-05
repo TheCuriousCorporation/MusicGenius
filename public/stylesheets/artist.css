@@ -25,7 +25,7 @@ body {
     height:280px;
 }
 
-/*#info {
+#info {
     margin-left:10px;
     margin-top:5px;
     height:15px;
@@ -33,6 +33,7 @@ body {
 
 }
 
+/*
 .artist-image {
     /*height:300px;
 }*/
@@ -84,6 +85,15 @@ body {
     display:none;
 }
 
+#news-well {
+    height: 482px;
+    width: 370px;
+}
+
 .card {
-    overflow:hidden;
+    /*overflow:hidden;*/
+}
+
+.row-fluid [class*="span"]:first-child {
+margin-left: 0;
 }
