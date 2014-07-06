@@ -1,0 +1,108 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
+    <title>Music Genius</title>
+    
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/app.css" rel="stylesheet">
+    <link href="/stylesheets/artist.css" rel="stylesheet">
+    <style>
+        .image-container {
+            width: 240px;
+            height: 240px;
+            background-size: cover;
+            background-image:"http://i.stack.imgur.com/2OrtT.jpg";
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            float:left;
+        }
+     </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script type="text/javascript" src="/javascripts/get_key_with_callback.js"></script>
+      <script type="text/javascript" src="/javascripts/script.js"></script>
+      <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic,700italic,400italic" rel="stylesheet" type="text/css">
+  </head>
+    <body class="home">
+      <header>Music Genius</header>
+      <div id="search">
+         <center><input id="artist2" type="text" class="span3" placeholder="Find an Artist" </input> </center><br />
+        <center><button id="go" class="btn btn-primary">GO!</button>  </center>
+      <ul class="nav pull-right">
+      </ul>
+    </div>
+<div>
+  <br />
+  <br />
+  <br />
+  <center><div id="info" class=""> </div></center>
+</div>
+<main>
+<div>
+    <div id='yes-artist'>
+      <div class="row-fluid"> 
+        <div class="span7">
+          <h3 id="artist-name"></h3>
+          <div id="bio"> </div>
+        </div>
+       </div>
+
+
+
+    <div class="row-fluid">
+        <div class="span6">
+          <!--<h3>Curiously Similar Artists</h3>
+          <div id="similar-artists"></div>-->
+        </div>
+        <div class="span6">
+          <h3 id="top-genre-header">Top Genres</h3>
+          <div id="top-genres"> </div>
+       </div>
+       </div>
+      </div>
+
+      <div class="row-fluid">
+      </div>
+      <div id="news-div" class="row-fluid">
+        <div class="span4">
+          <h1>News</h1>
+          <div id="news" class="card"> </div>
+        </div>
+        <div class="span4">
+          <h1>Blogs</h1>
+          <div id="blogs" class="card"> </div>
+        </div>
+            <div class="row-fluid">
+        <div class="span6">
+          <h3></h3>
+        </div>
+      </div> 
+        <div class="span4">
+          <h3>Recent Reviews</h3>
+          <div id="reviews" class="card"> </div>
+       </div>
+      </div>
+  </div>
+
+</div>
+  <div class="container span8 offset1">
+    <center>
+    <small>
+    Powered by <a href="http://echonest.com">The Echo Nest</a>.<br />
+    Made by <a href="https://github.com/TheCuriousCorporation">The Curious Corporation</a>.
+    </small>
+  </center>
+  </div>
+</main>
+</div>
+  </body>
+</html>
