@@ -278,7 +278,7 @@ function showURLs(artist) {
     var div = $("#artist-urls");
     div.empty();
     $.each(artist.urls, function(key, url) {
-        var link = $("<a>")
+       var link = $("<a>")
             .text(makeName(key))
             .attr('href', url);
         div.append(link);
