@@ -14,17 +14,7 @@
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/app.css" rel="stylesheet">
     <link href="/stylesheets/artist.css" rel="stylesheet">
-    <style>
-        .image-container {
-            width: 240px;
-            height: 240px;
-            background-size: cover;
-            background-image:"http://i.stack.imgur.com/2OrtT.jpg";
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            float:left;
-        }
-     </style>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="/javascripts/get_key_with_callback.js"></script>
     <script type="text/javascript" src="/javascripts/script.js"></script>
@@ -44,13 +34,16 @@
     </script>
     </head>
       <body class="home">
-        <header>Music Genius</header>
-        <div id="search">
+          <header>Music Genius</header>
+          <div id="search">
           <center><input id="artist2" type="text" class="span3" placeholder="Find an Artist" </input> </center><br />
-          <center><button id="go" class="btn btn-primary">GO!</button>  </center>
+          <center><button type="button" id="go" class="btn btn-primary">DISCOVER!</button></center>
+
         <ul class="nav pull-right">
         </ul>
       </div>
+    </div>
+  </div>
   <div>
   <br />
   <br />
@@ -70,10 +63,6 @@
 
 
     <div class="row-fluid">
-        <div class="span6">
-          <!--<h3>Curiously Similar Artists</h3>
-          <div id="similar-artists"></div>--> 
-        </div>
         <div class="span6">
           <h3 id="top-genre-header">Top Genres</h3>
           <div id="top-genres"> </div>
