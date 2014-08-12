@@ -30,7 +30,8 @@
   -moz-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
+} 
+
 html,
 body {
   height: 100%;
