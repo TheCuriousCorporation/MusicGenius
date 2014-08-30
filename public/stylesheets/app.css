@@ -45,7 +45,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 .social-likes__widget {
@@ -104,15 +104,15 @@ body.page header {
   display: none;
 }
 #search {
-  margin: 3em 0 0 0;
+  margin: 6em 0 0 0;
 }
 #search input {
-  width: 75%;
+  width: 50%;
   border: 1px solid #ddd;
   outline: none;
-  font-size: 1em;
+  font-size: 1.25em;
   border-radius: 100px;
-  padding: 0.5em 1em;
+  padding: 1.25em 1em;
   -webkit-appearance: none;
 }
 body.home #search input {
@@ -146,9 +146,13 @@ main {
 p {
   margin: 1em 0;
 }
+header {
+  font-size: 3.1em;
+  margin: 1.5em 0 .4em;
+}
 h1 {
   font-size: 2.1em;
-  margin: 1.5em 0 1em;
+  margin: 1.5em 0 .4em;
 }
 h2 {
   font-size: 1.8em;
@@ -241,3 +245,5 @@ ul.mw-search-results li {
 input {
   text-align:center;
 }
+
+
