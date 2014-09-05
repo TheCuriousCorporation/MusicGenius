@@ -40,10 +40,8 @@ body {
 
 #yes-artist {
     display:none;
-    margin-left:10px;
-    margin-right:10px;
-    margin-left:40px;
-    margin-right:40px;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
     margin-top:-75px;
 }
 
