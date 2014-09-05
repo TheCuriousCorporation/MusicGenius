@@ -32,6 +32,23 @@
   </head>
 
 <body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '393466000800467',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div id="wrap" class="navbar navbar-inverse">
   <div class="navbar-inner navbar-fixed-top" role="navigation" >
@@ -161,15 +178,15 @@
       </div>
       <div id="news-div" class="row-fluid">
         <div class="span4">
-          <h3><img src="/images/news.png" />News</h3>
+          <h3>News</h3>
           <div id="news" class="card"> </div>
         </div>
         <div class="span4">
-          <h3><img src="/images/news.png" />Reviews</h3>
+          <h3>Reviews</h3>
           <div id="reviews" class="card"> </div>
        </div>
         <div class="span4">
-          <h3><img src="/images/news.png" />Blogs</h3>
+          <h3>Blogs</h3>
           <div id="blogs" class="card"> </div>
         </div>
       </div>
