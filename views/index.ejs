@@ -25,9 +25,12 @@
     <link href="/stylesheets/strap.css" rel="stylesheet">
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/javascripts/rdio.js"></script>
-  <script type="text/javascript" src="/javascripts/api_key.js"></script>
+    <script type="text/javascript" src="/javascripts/api_key.js"></script>
+    <script type="text/javascript" src="/javascripts/spotifytools.js"></script>  
+    <script type="text/javascript" src="/javascripts/playlist.js"></script>
     <link href="/stylesheets/styles.css" rel="stylesheet">
     <link href="/stylesheets/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/spotify.css" />
     <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic,700italic,400italic" rel="stylesheet" type="text/css">
         <!--Google Analytics Tracking-->  
     <script>
@@ -63,25 +66,28 @@
 
 <div id="wrap" class="navbar navbar-inverse">
   <div class="navbar-inner navbar-fixed-top" role="navigation" >
-    <div class="container">
-        <a id='show-search' href="." class="brand">Music Genius</a>
 
-        <!--<ul class="nav pull-right">
-          <li class="nav-choice"><a href="/">Contact</a></li>
-         <li class="nav-choice"><a href="/">About</a></li>
-          <li class="nav-choice"><a href="/"></a></li>
-        </ul> -->
-    </div>
   </div>
 </div>
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+  </div>
+  <div class="navbar-collapse collapse">
+  </div>
+</div>
+
 
 <!--<div class="container">
    <div id="no-artist" class="container hero-unit offset1 span10"> -->
     <div id="search">
-      <header>Music <a href="/"><img src="/images/MG.png" /></a> Genius</header>
-        <center><input id="artist2" type="text" class="input-xlarge" placeholder="Enter Any Artist" </input><br /><br /> 
-        <button id="go" class="btn btn-danger">Genius Button!</button>
-        <div id="info"> </div></center>
+      <header><a class="page-title" href="/" >Music Genius</a>
+        <p class="search-this">Search for any band or musician</p></header>
+        <center>
+          <input id="artist2" type="text" class="input-xlarge" placeholder="Start Here"></input><br /><br /> 
+        <button id="go" class="btn">GO!</button>
+        <div id="info"></div></center>
     </div>
 
 
@@ -147,6 +153,9 @@
              </div> 
        </div>
      </div>
+
+         <div id="info"> </div>
+    <div id="all_results"> </div>
 
      <!--<div class="row-fluid">
         <div class="span6">
@@ -220,7 +229,7 @@ var deferredSong = null;
 function info(s) {
     $("#info").removeClass();
     if (s.length > 0) {
-        $("#info").addClass("alert alert-info");
+        $("#info").addClass("");
     }
     $("#info").text(s);
 }
@@ -233,7 +242,7 @@ function tinfo(s) {
 function error(s) {
     $("#info").removeClass();
     if (s.length > 0) {
-        $("#info").addClass("alert alert-error");
+        $("#info").addClass();
     }
     $("#info").text(s);
 }

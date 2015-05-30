@@ -42,12 +42,20 @@ body {
   font-weight: 300;
   padding-bottom: 3em;
   color: #000;
+  font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+  background-color: #fff;
+  color: #000;
 }
 @media (min-width: 768px) {
   body {
     font-size: 21px;
   }
 }
+
+body, a {
+  color: #000000;
+}
+
 .social-likes__widget {
   padding: 0.5em 1em;
   border-radius: 3em;
@@ -246,4 +254,35 @@ input {
   text-align:center;
 }
 
+#search-form, .form-control {
+  margin-bottom: 20px;
+}
 
+.cover {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.cover:hover {
+  cursor: pointer;
+}
+
+.cover.playing {
+  border: 5px solid #e45343;
+}
+
+.page-title {
+  text-decoration: none;
+  color: #000000;
+  color: inherit;
+}
+
+.header-title {
+  color: #000000;
+}
+
+.search-this {
+  font-size: .35em;
+}

@@ -11,9 +11,10 @@
     
     <title>Music Genius</title>
     
-    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/app.css" rel="stylesheet">
-    <link href="/stylesheets/artist.css" rel="stylesheet">
+    <link href="/stylesheets/artist.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://developer.spotify.com/web-api/static/css/cached.css" />
     <style>
         .image-container {
             width: 240px;
@@ -24,6 +25,28 @@
             background-position: 50% 50%;
             float:left;
         }
+        body {
+          padding: 20px;
+}
+
+#search-form, .form-control {
+  margin-bottom: 20px;
+}
+
+.cover {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.cover:hover {
+  cursor: pointer;
+}
+
+.cover.playing {
+  border: 5px solid #e45343;
+}
      </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script type="text/javascript" src="/javascripts/get_key_with_callback.js"></script>
